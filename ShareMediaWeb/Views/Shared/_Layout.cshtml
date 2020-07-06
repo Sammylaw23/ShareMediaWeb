@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @*<div class="container body-content">*@
+        <header>
+            <nav class="navbar navbar-light navbar-static-top" style="background-color: #ffffff;margin-bottom:0px;">
+                <a class="navbar-brand" href="#" style="color: #dc4627">
+                 SHARE MEDIA
+                </a>
+                <form class="form-inline navbar-text">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </nav>    
+        </header>
+
+        @RenderBody()
+
+        <footer></footer>
+    @*</div>*@
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

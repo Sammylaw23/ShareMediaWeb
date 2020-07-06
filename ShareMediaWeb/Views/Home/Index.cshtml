@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="Home-Pic" style="background-size:cover">
+
+</div>
+
+
+<div class="login-wrap">
+    <p>
+        <h3 class="blue-text text-center">Login to Share Media</h3>
+    </p>
+    <hr />
+    <form action="/login" id="kp-mw-login" class="ajax" autocomplete="off" method="post">
+
+        <div id="notifications"></div>
+
+        <div class="form-group">
+            <label for="" class="visible-xs">Username</label>
+            <input type="text" id="phone" name="user_identifier" value="" class="form-control login_param" placeholder="Phone Number" data-validate="Phone" autocomplete="off" minlength="11" maxlength="11" />
+        </div>
+
+        <div class="form-group">
+            <label for="" class="visible-xs">Password</label>
+            <div class="pw-wrap">
+                <input type="password" id="password" name="password" value="" class="form-control" placeholder="Your KongaPay PIN" data-validate="PIN" autocomplete="off" maxlength="4" minlength="4" />
+            </div>
+        </div>
+        <div class="lg-helper">
+            <div class="row">
+                <div class="col-sm-6">
+                </div>
+                <div class="col-sm-6 text-right">
+                    <div class="f-pass">
+                        <a href="#">
+                            Forgot Your ShareMedia PIN?
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="csrf" name="csrf" value="VjNrMkgvbE5FZDdoNENSMVltamVSdz09" />
+        <button type="submit" class="btn btn-primary btn-block">LOG IN</button>
+        <div class="col-sm-1 col-xs-2" id="loader" style="display: none; margin-left: 40%;">
+            <svg class="circular" height="50" width="50">
+                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </form>
+    <div class="text-center">
+        <br>
+    </div>
+    <hr>
+    <div class="text-center">
+        <p>
+            Don’t have a ShareMedia account?
+            <br><a href="@Url.Action("Register")">Sign Up Here</a>
+
+        </p>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+﻿body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    margin: 0px;
+    padding: 0px;
+    background-color: #f0f4f7; /*#f5f5f5;*/
+    font-family: proxima-nova,proxima nova,sans-serif;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+/*PICTURES*/
+
+.Home-Pic {
+    opacity: 0.4;
+    background: url('Assets/Images/home_pic.jpg') no-repeat center fixed;
+    background-size: cover;
+    padding: 50px;
+    margin: 0px;
+    min-height: 800px;
+}
+
+
+/*HOME*/
+.login-wrap {
+    position: relative;
+    top: -50em;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    /*margin: 5em 0 2em;*/
+    box-shadow: 0 0 6px rgba(0,0,0,.075);
+    z-index: 100
+}
+
+label {
+    margin-top: 10px;
+    font-weight: 600
+}
+
+.form-group-title {
+    padding-top: 20px
+}
+
+    .form-group-title:first-child {
+        padding-top: 0
+    }
+
+.upload-input {
+    line-height: 100% !important
+}
+
+.signup-wrap {
+    margin: 0 0 6em
+}
+
+    .login-wrap .btn, .signup-wrap .btn {
+        padding: 12px 26px;
+        font-size: 16px
+    }
+
+    .login-wrap .form-control, .signup-wrap .form-control {
+        font-size: 15px;
+        height: 40px
+    }
+
+.pw-wrap {
+    position: relative
+}
+
+    .pw-wrap input {
+        padding-right: 100px
+    }
+
+
+
+/*TEXT.....................................................................................................*/
+
+.blue-text {
+    color: #0E80B3;
+}
+
+.blue-text2 {
+    color: #16508F;
+}
+
+/*REGISTER FORM.......................................................................................................*/
+.register-body {
+    background: url('Assets/Images/register_pic3.jpg') no-repeat center fixed;
+    background-size: cover;
+    padding: 50px;
+    margin: 0px;
+    float: left;
+    min-height: 800px;
+}
+
+.Form-Box {
+    background-color:#ffffff;
+    width: 600px;
+    min-height:600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding:30px;
+
+    /*opacity:0.7;*/
+    -webkit-box-shadow: -4px 4px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: -4px 4px 8px -3px rgba(0,0,0,0.75);
+}
